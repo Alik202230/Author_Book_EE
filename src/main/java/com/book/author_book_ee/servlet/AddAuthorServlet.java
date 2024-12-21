@@ -32,7 +32,7 @@ public class AddAuthorServlet extends HttpServlet {
     String gender = req.getParameter("gender");
 
     Author author = Author.builder()
-        .name(name)
+        .name(name) 
         .surname(surname)
         .phone(phone)
         .dateOfBirthday(DateUtil.fromWebStringToDate(dob))

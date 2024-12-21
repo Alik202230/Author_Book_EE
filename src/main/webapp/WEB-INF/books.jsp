@@ -28,6 +28,7 @@
   <% for (Book book : books) { %>
   <tr>
     <td><%=book.getId()%></td>
+    <td><img src="/get-image?imageName=<%=book.getImageName()%>"></td>
     <td><%=book.getTitle()%></td>
     <td><%=book.getPrice()%></td>
     <td><%=book.getQty()%></td>
